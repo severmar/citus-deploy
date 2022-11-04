@@ -14,11 +14,11 @@ spec:
     spec:
       containers:
       - name: rn3-pg-helm-dataset-pgpool
-        image: pgpool/pgpool:4.2
+        image: pgpool/pgpool:latest
         imagePullPolicy: Always
         env:
         - name: POSTGRES_USERNAME
-          value: user
+          value: postgres
         - name: POSTGRES_PASSWORD
           valueFrom:
             secretKeyRef:

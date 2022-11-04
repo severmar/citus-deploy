@@ -15,7 +15,7 @@ spec:
       serviceAccountName: pod-listing-sa
       containers:
       - name: citus-manager-container
-        image: eeacms/citus-manager:1.0
+        image: mseverag/citus-manager-kubernetes:v1
         imagePullPolicy: Always
         volumeMounts:
         - name: citus-config-mount

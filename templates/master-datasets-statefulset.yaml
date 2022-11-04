@@ -61,7 +61,7 @@ spec:
               secretKeyRef:
                 name: citus-secrets
                 key: password
-          image: eeacms/citus-postgis:1.0
+          image: mseverag/postgis15-3_citus11:latest
           imagePullPolicy: Always
           name: citus-master
           volumeMounts:
@@ -87,7 +87,7 @@ spec:
     - metadata:
         name: storage
       spec:
-        storageClassName: reportnet
+        storageClassName: citus
         accessModes:
           - ReadWriteOnce
         resources:

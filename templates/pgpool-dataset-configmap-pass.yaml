@@ -6,4 +6,4 @@ metadata:
     name: pgpool-dataset-config-pass
 data:
   pool_passwd: |-
-    #user:pass(in md5)
+    #postgres:e8a48653851e28c69d0506508fb27fc5
